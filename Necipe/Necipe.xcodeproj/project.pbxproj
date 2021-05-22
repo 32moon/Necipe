@@ -9,21 +9,39 @@
 /* Begin PBXBuildFile section */
 		285325F62658DB0900677651 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285325F52658DB0900677651 /* AppDelegate.swift */; };
 		285325F82658DB0900677651 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285325F72658DB0900677651 /* SceneDelegate.swift */; };
-		285325FA2658DB0900677651 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285325F92658DB0900677651 /* ViewController.swift */; };
 		285325FD2658DB0900677651 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 285325FB2658DB0900677651 /* Main.storyboard */; };
 		285325FF2658DB0C00677651 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 285325FE2658DB0C00677651 /* Assets.xcassets */; };
 		285326022658DB0C00677651 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 285326002658DB0C00677651 /* LaunchScreen.storyboard */; };
+		28532618265909EF00677651 /* BINGLE.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 28532617265909EF00677651 /* BINGLE.TTF */; };
+		2853261B26590A0000677651 /* NEXON LV2 GOTHIC.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 2853261A26590A0000677651 /* NEXON LV2 GOTHIC.TTF */; };
+		2853262026590C6300677651 /* NEXON LV2 GOTHIC LIGHT.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 2853261F26590C6300677651 /* NEXON LV2 GOTHIC LIGHT.TTF */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXBuildRule section */
+		2853261D26590AFB00677651 /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.proxy.script;
+			fileType = image.tiff;
+			inputFiles = (
+			);
+			isEditable = 1;
+			outputFiles = (
+			);
+			script = "# builtin-copyTiff\n";
+		};
+/* End PBXBuildRule section */
 
 /* Begin PBXFileReference section */
 		285325F22658DB0900677651 /* Necipe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Necipe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		285325F52658DB0900677651 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		285325F72658DB0900677651 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		285325F92658DB0900677651 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		285325FC2658DB0900677651 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		285325FE2658DB0C00677651 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		285326012658DB0C00677651 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		285326032658DB0C00677651 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		28532617265909EF00677651 /* BINGLE.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = BINGLE.TTF; sourceTree = "<group>"; };
+		2853261A26590A0000677651 /* NEXON LV2 GOTHIC.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NEXON LV2 GOTHIC.TTF"; sourceTree = "<group>"; };
+		2853261F26590C6300677651 /* NEXON LV2 GOTHIC LIGHT.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NEXON LV2 GOTHIC LIGHT.TTF"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +76,23 @@
 			children = (
 				285325F52658DB0900677651 /* AppDelegate.swift */,
 				285325F72658DB0900677651 /* SceneDelegate.swift */,
-				285325F92658DB0900677651 /* ViewController.swift */,
 				285325FB2658DB0900677651 /* Main.storyboard */,
+				28532616265909B100677651 /* Font */,
 				285325FE2658DB0C00677651 /* Assets.xcassets */,
 				285326002658DB0C00677651 /* LaunchScreen.storyboard */,
 				285326032658DB0C00677651 /* Info.plist */,
 			);
 			path = Necipe;
+			sourceTree = "<group>";
+		};
+		28532616265909B100677651 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				28532617265909EF00677651 /* BINGLE.TTF */,
+				2853261F26590C6300677651 /* NEXON LV2 GOTHIC LIGHT.TTF */,
+				2853261A26590A0000677651 /* NEXON LV2 GOTHIC.TTF */,
+			);
+			path = Font;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -79,6 +107,7 @@
 				285325F02658DB0900677651 /* Resources */,
 			);
 			buildRules = (
+				2853261D26590AFB00677651 /* PBXBuildRule */,
 			);
 			dependencies = (
 			);
@@ -125,8 +154,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				285326022658DB0C00677651 /* LaunchScreen.storyboard in Resources */,
+				2853261B26590A0000677651 /* NEXON LV2 GOTHIC.TTF in Resources */,
+				2853262026590C6300677651 /* NEXON LV2 GOTHIC LIGHT.TTF in Resources */,
 				285325FF2658DB0C00677651 /* Assets.xcassets in Resources */,
 				285325FD2658DB0900677651 /* Main.storyboard in Resources */,
+				28532618265909EF00677651 /* BINGLE.TTF in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,7 +169,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				285325FA2658DB0900677651 /* ViewController.swift in Sources */,
 				285325F62658DB0900677651 /* AppDelegate.swift in Sources */,
 				285325F82658DB0900677651 /* SceneDelegate.swift in Sources */,
 			);

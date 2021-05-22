@@ -1,24 +1,172 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="tcd-xw-fbb">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="BINGLE.TTF">
+            <string>Binggrae-Bold</string>
+        </array>
+        <array key="NEXON LV2 GOTHIC.TTF">
+            <string>NEXONLv2GothicRegular</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Necipe" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CyM-lZ-cvF">
+                                <rect key="frame" x="72.5" y="360" width="269" height="49"/>
+                                <color key="backgroundColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="269" id="536-6q-uFr"/>
+                                    <constraint firstAttribute="height" constant="49" id="UZb-Tw-ajc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="NEXONLv2GothicRegular" family="NEXON Lv2 Gothic" pointSize="18"/>
+                                <state key="normal" title="카카오톡">
+                                    <color key="titleColor" red="0.4392156862745098" green="0.4392156862745098" blue="0.4392156862745098" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lXn-sj-W0S">
+                                <rect key="frame" x="72.5" y="432" width="269" height="49"/>
+                                <color key="backgroundColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="49" id="DTG-hh-xL6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="NEXONLv2GothicRegular" family="NEXON Lv2 Gothic" pointSize="18"/>
+                                <state key="normal" title="네이버">
+                                    <color key="titleColor" red="0.4392156862745098" green="0.4392156862745098" blue="0.4392156862745098" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nny-SC-Gt2">
+                                <rect key="frame" x="161" y="227" width="92.5" height="43"/>
+                                <fontDescription key="fontDescription" name="Binggrae-Bold" family="Binggrae" pointSize="32"/>
+                                <color key="textColor" red="0.4392156862745098" green="0.4392156862745098" blue="0.4392156862745098" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="CyM-lZ-cvF" firstAttribute="top" secondItem="nny-SC-Gt2" secondAttribute="bottom" constant="90" id="2OU-yh-p4g"/>
+                            <constraint firstItem="lXn-sj-W0S" firstAttribute="leading" secondItem="CyM-lZ-cvF" secondAttribute="leading" id="YXu-a9-GXI"/>
+                            <constraint firstItem="nny-SC-Gt2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="a8d-Qp-YXv"/>
+                            <constraint firstItem="lXn-sj-W0S" firstAttribute="trailing" secondItem="CyM-lZ-cvF" secondAttribute="trailing" id="cB7-9Y-EMT"/>
+                            <constraint firstItem="nny-SC-Gt2" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="227" id="dTg-I5-w8y"/>
+                            <constraint firstItem="lXn-sj-W0S" firstAttribute="top" secondItem="CyM-lZ-cvF" secondAttribute="bottom" constant="23" id="ij7-ov-gXy"/>
+                            <constraint firstItem="CyM-lZ-cvF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="z4k-tn-3Sm"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="pUU-7N-Q56"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="572" y="84"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="7ja-DJ-ipp">
+            <objects>
+                <viewController id="LGX-kD-hRS" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="92X-P0-I49">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Profile" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F5g-b4-azc">
+                                <rect key="frame" x="151.5" y="176" width="111.5" height="43"/>
+                                <fontDescription key="fontDescription" name="Binggrae-Bold" family="Binggrae" pointSize="32"/>
+                                <color key="textColor" red="0.4392156862745098" green="0.4392156862745098" blue="0.4392156862745098" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profileImage_2" translatesAutoresizingMaskIntoConstraints="NO" id="Fdj-FG-Txy">
+                                <rect key="frame" x="146" y="305" width="122" height="122"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Fdj-FG-Txy" secondAttribute="height" multiplier="120:120" id="72X-Pb-lFK"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="프로필 사진" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nyf-D4-ir3">
+                                <rect key="frame" x="165.5" y="441" width="83.5" height="20"/>
+                                <fontDescription key="fontDescription" name="NEXONLv2GothicRegular" family="NEXON Lv2 Gothic" pointSize="18"/>
+                                <color key="textColor" red="0.4392156862745098" green="0.4392156862745098" blue="0.4392156862745098" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RId-OY-CHX">
+                                <rect key="frame" x="75" y="498" width="264" height="49"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="닉네임" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rfK-YH-2QY">
+                                        <rect key="frame" x="16" y="14.5" width="47.5" height="20"/>
+                                        <fontDescription key="fontDescription" name="NEXONLv2GothicRegular" family="NEXON Lv2 Gothic" pointSize="18"/>
+                                        <color key="textColor" red="0.4392156862745098" green="0.4392156862745098" blue="0.4392156862745098" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="닉네임을 입력해 주세요" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="c14-1j-Os2">
+                                        <rect key="frame" x="81.5" y="13.5" width="166.5" height="22"/>
+                                        <fontDescription key="fontDescription" name="NEXONLv2GothicRegular" family="NEXON Lv2 Gothic" pointSize="18"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="c14-1j-Os2" firstAttribute="centerY" secondItem="RId-OY-CHX" secondAttribute="centerY" id="Iq9-cJ-vhg"/>
+                                    <constraint firstAttribute="width" constant="264" id="SCE-75-Yok"/>
+                                    <constraint firstItem="rfK-YH-2QY" firstAttribute="centerY" secondItem="RId-OY-CHX" secondAttribute="centerY" id="Vhe-Gn-g8L"/>
+                                    <constraint firstItem="rfK-YH-2QY" firstAttribute="leading" secondItem="RId-OY-CHX" secondAttribute="leading" constant="16" id="pay-9c-uAF"/>
+                                    <constraint firstItem="c14-1j-Os2" firstAttribute="leading" secondItem="rfK-YH-2QY" secondAttribute="trailing" constant="18" id="q0b-hB-SQ2"/>
+                                    <constraint firstAttribute="height" constant="49" id="zj3-aZ-Vwh"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="bNd-SQ-tGf"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="bNd-SQ-tGf" firstAttribute="trailing" secondItem="Fdj-FG-Txy" secondAttribute="trailing" constant="146" id="1jP-H8-hjL"/>
+                            <constraint firstItem="nyf-D4-ir3" firstAttribute="top" secondItem="Fdj-FG-Txy" secondAttribute="bottom" constant="14" id="ALn-xY-Lji"/>
+                            <constraint firstItem="Fdj-FG-Txy" firstAttribute="leading" secondItem="bNd-SQ-tGf" secondAttribute="leading" constant="146" id="Kx6-2B-5Xh"/>
+                            <constraint firstItem="F5g-b4-azc" firstAttribute="centerX" secondItem="92X-P0-I49" secondAttribute="centerX" id="NkX-Go-0O2"/>
+                            <constraint firstItem="nyf-D4-ir3" firstAttribute="centerX" secondItem="92X-P0-I49" secondAttribute="centerX" id="O7d-Ec-2Bu"/>
+                            <constraint firstItem="Fdj-FG-Txy" firstAttribute="centerX" secondItem="92X-P0-I49" secondAttribute="centerX" id="P4v-ws-hCl"/>
+                            <constraint firstItem="RId-OY-CHX" firstAttribute="centerX" secondItem="92X-P0-I49" secondAttribute="centerX" id="QWg-Sw-EDL"/>
+                            <constraint firstItem="RId-OY-CHX" firstAttribute="top" secondItem="nyf-D4-ir3" secondAttribute="bottom" constant="37" id="Uit-3v-1BG"/>
+                            <constraint firstItem="F5g-b4-azc" firstAttribute="top" secondItem="92X-P0-I49" secondAttribute="top" constant="176" id="WYO-Ji-HAx"/>
+                            <constraint firstItem="Fdj-FG-Txy" firstAttribute="top" secondItem="F5g-b4-azc" secondAttribute="bottom" constant="86" id="rVU-dx-65X"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="k2G-or-lOz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1287" y="84"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="w7L-ih-RPf">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="tcd-xw-fbb" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="A7F-Wy-iaQ">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="tEK-kd-NUq"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UM8-fi-xgA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-197.10144927536234" y="84.375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="profileImage_2" width="240" height="240"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
